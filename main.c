@@ -132,7 +132,7 @@ printf("Najveci broj je:%d",max);
     printf ("x*x=%d, ne pripada oblasti [%d,%d]",x*x,a,b);
  }
 
-*/
+
 
 // ZADATAK 3.11
 
@@ -153,6 +153,103 @@ else {
 }
 printf ("y = %.2f",y);
 
+
+
+
+// ZADATAK 4.1
+
+int i;
+
+for (i=1;i<6; i++){
+    printf("\nHello World");
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+// WHILE
+
+int a;
+a=1;
+    while(a<=100) {
+    printf("Pozdrav svima\n");
+    a++;
+}
+
+
+
+
+
+// ZADATAK 5.4
+
+    int n,i,S;
+    printf("Unesite n:");
+    scanf("%d",&n);
+
+    S = 0;
+    i=1;
+
+    while(i<=n) {
+        S += i;
+        i+= 3;
+
+    }
+
+    printf("Suma svakog treceg prirodnog broja je:%d",S);
+
+
+
+
+    // ZADATAK 5.7
+
+
+    int n,i,ft,fp=1 ,fpp=1;
+
+    printf("Unesite n ");
+    scanf("%d",&n);
+
+    printf("Elementi fibonacijevog niza su:\n1 1 ");
+
+    i= 3;
+    while(i <=n ){
+        ft=fp+fpp;
+        printf("%d ",ft);
+        fpp=fp;
+        fp=ft;
+        i++;
+    }
+
+// ZADATAK 5.8
+
+
+int n,a,i=1,stepen = 1;
+printf ("Unesite stepen i broj:");
+scanf("%d %d",&n,&a);
+
+while (i <= n) {
+    stepen *= a;
+    i++;
+}
+
+printf("Stepen unetog broja iznosi:%d",stepen);
+
+*/
+
+// ZADATAK 5.9
+
+const float STOP = 0;
+int brojac = 0;
+float realanBroj = -1, S= 0;
+
+while (realanBroj != STOP){
+    printf("Unesite jedan relana broj");
+    scanf("%f",&realanBroj);
+    S += realanBroj;
+    brojac++;
+
+    }
+    float as= S /(brojac - 1);
+    printf("Aritmeticka sredina brojeva je: %.2f",as);
  return 0;
 
 }
