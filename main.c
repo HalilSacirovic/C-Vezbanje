@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
@@ -233,7 +234,7 @@ while (i <= n) {
 
 printf("Stepen unetog broja iznosi:%d",stepen);
 
-*/
+
 
 // ZADATAK 5.9
 
@@ -250,6 +251,77 @@ while (realanBroj != STOP){
     }
     float as= S /(brojac - 1);
     printf("Aritmeticka sredina brojeva je: %.2f",as);
+
+    // NACIN SA DO WHILE PETLJOM
+
+    const float STOP = 0;
+int brojac = 0;
+float realanBroj = -1, S= 0;
+
+do {
+    printf("Unesite jedan relana broj");
+    scanf("%f",&realanBroj);
+    S += realanBroj;
+    brojac++;
+
+    }
+
+    while(realanBroj != STOP);
+    float as= S /(brojac - 1);
+    printf("Aritmeticka sredina brojeva je: %.2f",as);
+
+
+
+// ZADATAK 5.18
+// OBJASNJENJE ZNACI NIVENOV BROJ JE AKO JE DELJIV NPR ZA ZBIROM TIH BROJEVA NPR AKO UZMEMO BROJ 224 2+2+4=8, i ako je taj broj deljiv sa 8 bez ostatka znaci da
+// Je taj broj nivenov i onda nam ispisuje ovo;
+int broj,S = 0, zadnjaCifra,pom;
+
+printf("Unesite broj za proveru");
+scanf("%d",&broj);
+
+pom=broj;
+
+while(broj>0) {
+    zadnjaCifra = broj%10;
+    S += zadnjaCifra;
+    broj = broj/10;
+
+}
+
+if (pom % S == 0){
+    printf("Uneti broj je nivenov");
+}
+else {
+    printf("Uneti broj nije Nivenov");
+}
+
+
+
+
+// ZADATAK 6.5
+
+int i = 1, znak = 1;
+double eps,PI,S = 0,clan;
+
+do{
+    printf("Unesite eps");
+    scanf("%lf",&eps);
+
+}while (eps <= 0 );
+
+do {
+    clan = znak * 1.0 / i;
+    S += clan;
+    znak = -znak;
+    i += 2;
+
+}while (fabs(clan)>= eps);
+
+PI = 4 *S;
+printf("Dobijena vrednost PI Izosi %lf",PI);
+
+*/
  return 0;
 
 }
