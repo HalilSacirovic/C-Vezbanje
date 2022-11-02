@@ -322,6 +322,26 @@ PI = 4 *S;
 printf("Dobijena vrednost PI Izosi %lf",PI);
 
 */
+
+
+double x, y, z, p;
+ printf("Unesite tri realna broja: ");
+ scanf("%lf%lf%lf", &x, &y, &z);
+ if(x>y)
+ {
+ p=x; x=y; y=p;
+ }
+ if(x>z)
+ {
+ p=x; x=z; z=p;
+ }
+ if(y>z)
+ {
+ p=y; y=z; z=p;
+ }
+ printf("Uredjeni brojevi: %.2f %.2f %.2f\n", x, y, z);
+
+
  return 0;
 
 }
