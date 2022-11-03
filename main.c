@@ -321,7 +321,6 @@ do {
 PI = 4 *S;
 printf("Dobijena vrednost PI Izosi %lf",PI);
 
-*/
 
 
 double x, y, z, p;
@@ -341,6 +340,87 @@ double x, y, z, p;
  }
  printf("Uredjeni brojevi: %.2f %.2f %.2f\n", x, y, z);
 
+
+
+
+// ZADATAK 3.18
+
+double a,b,c,D,x1,x2;
+ printf("Unesite a:");
+ scanf("%lf",&a);
+
+ printf("Unesite b:");
+ scanf("%lf",&b);
+
+ printf("Unesite c:");
+ scanf("%lf",&c);
+
+ if (a != 0 ) {
+    D= b*b-4*a*c;
+
+    if (D > 0 ){
+        x1= (-b+sqrt(D))/(2*a);
+        x2=(-b-sqrt(D))/(2*a);
+        printf("Resenja:\nx1=%.2f, x2=%.2f",x1,x2);
+    }
+    else if(D==0) {
+        x1= (-b/(2*a));
+        printf("Resenje iznosi:\nx1=x2=%.2f",x1);
+    }
+    else {
+        x1 = -b/ (2*a);
+        x2 =sqrt(-D)/(2*a);
+    printf("Resenje iznosi:\nx1=x2=%.2f",x1);
+    }
+ }
+
+ else  {
+    if( b!= 0) {
+        x1= -c/b;
+        printf("\nResenje je:\nx=%.2f",x1);
+}
+else {
+
+    printf("Sistem nema resenje ");
+    }
+ }
+
+*/
+ double a, b, c, D, x1, x2;
+ printf("Unesite koeficijente:\na= "); scanf("%lf",&a);
+ printf("b= "); scanf("%lf",&b);
+ printf("c= "); scanf("%lf",&c);
+ if(a!=0)
+ {
+ D=b*b-4*a*c;
+ if(D>0)
+ {
+ x1=(-b+sqrt(D))/(2*a);
+ x2=(-b-sqrt(D))/(2*a);
+ printf("n\Resenja:\nx1=%.2f, x2=%.2f",x1,x2);
+ }
+ else if(D==0)
+ {
+ x1=(-b/(2*a));
+ printf("\nResenje:\nx1=x2=%.2f",x1);
+ }
+ else
+ {
+ x1=-b/(2*a);
+ x2=sqrt(-D)/(2*a);
+ printf("\nKompleksna resenja:\n");
+ printf("x1=%.2f+i%.2f, x2=%.2f-i%.2fi",x1,x2,x1,x2);
+ }
+ }
+ else
+ {
+ if(b!=0)
+ {
+ x1=-c/b;
+ printf("\nResenje:\nx=%.2f",x1);
+ }
+ else printf("Sistem nema resenja.");
+ }
 
  return 0;
 
