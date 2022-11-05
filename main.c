@@ -385,7 +385,6 @@ else {
     }
  }
 
-*/
  double a, b, c, D, x1, x2;
  printf("Unesite koeficijente:\na= "); scanf("%lf",&a);
  printf("b= "); scanf("%lf",&b);
@@ -422,6 +421,122 @@ else {
  else printf("Sistem nema resenja.");
  }
 
- return 0;
+
+// VIDI ZASTO TI NECE PRVI KOD OVOG Zadatka
+
+
+// ZADATAK 4.1
+int i;
+
+for (i=1;i<6;i++){
+    printf("Pozdrav Svima\n");
+}
+
+
+
+//ZADATAK 4.2
+
+a)
+
+int i;
+
+for(i=1; i<=10; i++){
+    printf("%d\n",i);
+}
+
+
+b)
+int i;
+
+for(i=10;i>1;i--){
+ printf("%d\n",i);
+}
+
+
+// ZADATAK 4.3
+
+
+int i,j;
+
+for(i=1;i<=2;i++){
+    for(j=1;j<=3;j++) {
+        printf("i=%d,  j=%d\n",i,j);
+
+    }
+}
+for(i=1;i<=3;i++){
+    for(j=1;j<=2;j++) {
+        printf("\ni=%d,  j=%d\n",i,j);
+
+    }
+}
+
+
+// ZADATAK 4.4
+
+
+int n,i,S;
+S=0;
+
+printf("Unesite n=");
+scanf("%d",&n);
+
+for(i=1;i<=n;i++){
+    S=i+S;
+    // Ovde IDE ALGORITAM AKO JE i=1 S=1+0,zatim za i=2, s=2+1
+    //(staro s koje smo izracunali od i=1), i zatim sve ide do broja n kojeg smo mi uneli;
+
+}
+    printf("Suma=%d",S);
+
+int n,i;
+float k,S,ar;
+S=0;
+
+printf("n=");
+scanf("%d",&n);
+
+printf("Unesite %d brojeva:",n);
+for (i=1;i<=n;i++){
+    scanf("%f",&k);
+    S=k+S;
+}
+
+ar=S/n;
+printf("Suma zadatih brojeva je:%.2f",S);
+printf("\nAritmeticka sredina zadatih brojeva je:%.2f",ar);
+
+
+
+// ZADATAK 4.6
+
+
+
+int i,n;
+long faktorijel=1;
+
+printf("Unesite n=");
+scanf("%d",&n);
+
+for(i=1;i<=n;i++){
+faktorijel=faktorijel*i;
+}
+printf("Faktorijel:%ld",faktorijel);
+
+*/
+
+int i,n;
+long f=1,s=0;
+
+printf("Unesite n=");
+scanf("%d",&n);
+
+for(i=1;i<=n;i++){
+f=f*i;
+s=f+s;
+}
+printf("S=%ld",s);
+
+return 0;
 
 }
