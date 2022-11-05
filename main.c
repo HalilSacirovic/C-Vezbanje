@@ -523,7 +523,8 @@ faktorijel=faktorijel*i;
 }
 printf("Faktorijel:%ld",faktorijel);
 
-*/
+ZADATAK 4.7
+
 
 int i,n;
 long f=1,s=0;
@@ -537,6 +538,28 @@ s=f+s;
 }
 printf("S=%ld",s);
 
+
+// ZADATAK 4.8
+
+int i,n,m;
+long s;
+
+
+printf("Unesite n=");
+scanf("%d",&n);
+
+printf("Unesite m=");
+scanf("%d",&m);
+
+s= 1;
+
+for(i=0; i<=m;i++){
+    s=s*(n+i*m);
+}
+printf("\ns=%ld",s);
+
+
+*/
 return 0;
 
 }
