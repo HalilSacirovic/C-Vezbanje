@@ -559,7 +559,54 @@ for(i=0; i<=m;i++){
 printf("\ns=%ld",s);
 
 
+
+///// ZADATAK 4.9
+
+int n,i,faktorijel;
+float s,q;
+
+printf("n=");
+scanf("%d",&n);
+
+s=0;
+q=0;
+
+for (i=1;i<=n;i++){
+    faktorijel= faktorijel*i;
+    q=q+1./(1+i);
+    s= s+ faktorijel/q;
+}
+printf("\ns=%.5f",s);
+
 */
+
+
+// 4.11 Ne znam
+
+// 4.12
+
+
+int n,i;
+float br,max;
+
+printf("n=");
+scanf("%d",&n);
+max=br;
+
+printf("\nUnesite:1 ,  broj:");
+scanf("%f",&br);
+
+for (i=2;i<=n;i++){
+    printf("Unesite:%d.  broj: ",i);
+    scanf("%f",&br);
+        if(br>max){
+            max=br;
+        }
+}
+printf("Najveci:%.2f",max);
+
+
+
 return 0;
 
 }
