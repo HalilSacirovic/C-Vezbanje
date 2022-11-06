@@ -674,7 +674,37 @@ for(a=1;a<=9;a++){
     }
 }
 
-*/
-return 0;
+
+
+// ZADATAK 4.21
+
+
+int i,n,br=0,ocena;
+
+float zbir,srednja;
+
+printf("Broj ucenika n=");
+scanf("%d",&n);
+
+for(i=1;i<=n;i++){
+    printf("Unesite ocenu %d -ucenika:",i);
+    scanf("%d",&ocena);
+    zbir=zbir+ocena;
+
+    if(ocena == 1){
+        br++;
+    }
+
+}
+    srednja= zbir/n;
+    printf("\nSrednja ocena svih ucenika iznosi:%.2f",srednja);
+
+    printf("\nBroj negativnih ocena iznosi:%d",br);
+*/
+
+// ZADATAK
+
+
+return 0;
 
 }
