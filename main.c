@@ -578,7 +578,6 @@ for (i=1;i<=n;i++){
 }
 printf("\ns=%.5f",s);
 
-*/
 
 
 // 4.11 Ne znam
@@ -607,6 +606,75 @@ printf("Najveci:%.2f",max);
 
 
 
-return 0;
+
+// ZADATAK 4.13
+
+
+int i,s=0;
+
+printf("Brojevi deljivi sa 6:\n");
+for (i=1;i<=100;i++){
+    if(i % 6 == 0) {
+        s=s+i;
+        printf("%d\n",i);
+    }
+}
+
+printf("Suma iznosi:%d",s);
+
+// ZADATAK 4.14
+
+
+int a,b,c;
+
+for(a=1;a<=9;a++){
+    for(b=3;b<=9;b++){
+        for(c=4;c<=9;c++){
+            if (b==a+2 && c== b+1){
+                printf("%d%d%d\n",a,b,c);
+            }
+        }
+    }
+}
+
+
+
+
+// ZADATAK 4.15
+
+int a,b,c,d,broj;
+
+printf("Amstrongovi brojevi su:");
+
+for(a=1;a<=9;a++){
+    for(b=0;b<=9;b++){
+        for(c=0;c<=9;c++){
+            broj=a*100+b*10+c;
+            if(broj == pow(a,3)+pow(b,3)+pow(c,3)){
+               printf("%d\n",broj);
+        }
+    }
+}
+}
+
+
+
+// ZADATAK 4.16 OVAJ ZADATAK NE ZNAMM
+
+int a,b,c,broj;
+
+for(a=1;a<=9;a++){
+    for(b=0;b<=9;b++){
+        for(c=0;c<=9;c++){
+            broj= 100*a+b*10+c;
+            if(broj == (a*b)*(a*b)-c*c){
+                printf("%d\n",broj);
+            }
+        }
+    }
+}
+
+*/
+return 0;
 
 }
