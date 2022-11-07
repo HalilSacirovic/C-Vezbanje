@@ -700,9 +700,35 @@ for(i=1;i<=n;i++){
     printf("\nSrednja ocena svih ucenika iznosi:%.2f",srednja);
 
     printf("\nBroj negativnih ocena iznosi:%d",br);
-*/
+
+// ZADATAK 4.28 a)
 
-// ZADATAK
+int i,j,n;
+
+printf("Unesite n=");
+scanf("%d",&n);
+printf("\n");
+for(i=1;i<=n;i++){
+    for(j=1;j<=n;j++){
+        printf("* ");
+    }
+        printf("\n");
+}
+*/
+
+int i,j,n;
+
+printf("Unesite n=");
+scanf("%d",&n);
+printf("\n");
+for(i=1;i<=n;i++){
+    for(j=1;j<=i;j++){
+        printf("* ");
+    }
+        printf("\n");
+}
+
+
 
 
 return 0;
