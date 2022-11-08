@@ -837,7 +837,8 @@ for(i=1;i<=n;i++){
     }
         printf("\n");
 }
-*/
+
+ d)
 
 int i,n,j;
 
@@ -850,6 +851,23 @@ for(i=1;i<=n;i++){
     }
         printf("\n");
 }
-return 0;
+
+
+*/
+
+ int i, j, n, k;
+ printf(" n= ");
+ scanf("%d", &n);
+ printf("\n");
+ for(i=1; i<=n; i++)
+ {
+ for(k=n; k>i; k--)
+ printf(" ");
+ for(j=1; j<=i; j++)
+ printf("* ");
+ printf("\n");
+ }
+ getche();
+ return 0;
 
 }
