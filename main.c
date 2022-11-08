@@ -714,8 +714,8 @@ for(i=1;i<=n;i++){
     }
         printf("\n");
 }
-*/
 
+// v)
 int i,j,n;
 
 printf("Unesite n=");
@@ -725,12 +725,131 @@ for(i=1;i<=n;i++){
     for(j=1;j<=i;j++){
         printf("* ");
     }
+
+}
+
+
+
+
+// ZADATAK 4.20
+
+int n,i,s=0;
+
+printf("n=");
+scanf("%d",&n);
+for (i=1; i<=n; i++) {
+if (n% i ==0){
+    s+=i;
+}
+}
+if(s== n){
+    printf("Broj %d jeste savrsen broj.\n",n);
+}
+else{
+printf("Broj %d nije savrsen broj.\n",n);
+    }
+??????????????????????????
+
+
+int sat,minut,sekunde,n;
+
+printf("n=");
+scanf("%d",&n);
+
+for (sat=0;sat<=23;sat++){
+    for(minut=0;minut<=59;minut++)
+        for(sekunde=0;sekunde<=59;sekunde++){
+            if(n==(sat/10+sat%10+minut/10+minut%10+sekunde/10+sekunde%10)){
+               printf("\n%d sat %d min %d sec", sat, minut, sekunde);
+}
+}
+}
+
+
+// ZADATAK 4.26
+
+int i,j,n;
+
+
+printf("n=");
+scanf("%d",&n);
+
+for(i=1;i<=n;i++){
+    for(j=0;j<2*n;j++){
+        printf("%d",j);
+    }
+        printf("\n");
+}
+
+
+// ZADATAK 4.28
+
+//a)
+
+int i,n,j;
+
+printf("n=");
+scanf("%d",&n);
+
+for(i=1;i<=n;i++){
+    for(j=0;j<n;j++){
+        printf("*");
+    }
         printf("\n");
 }
 
 
 
 
+
+ b)
+
+int i,n,j;
+
+printf("n=");
+scanf("%d",&n);
+
+for(i=1;i<=n;i++){
+    for(j=1;j<=n;j++){
+        if(i ==1  || i== n){
+            printf("* ");
+        }
+        else if (j == 1 || j == n) {
+            printf("*    ");
+        }
+        else {
+            printf(" ");
+        }
+    }
+        printf("\n");
+}
+
+c)
+
+int i,n,j;
+
+printf("n=");
+scanf("%d",&n);
+
+for(i=1;i<=n;i++){
+    for(j=0;j<i;j++){
+        printf("*");
+    }
+        printf("\n");
+}
+*/
+
+int i,n,j;
+
+printf("n=");
+scanf("%d",&n);
+
+for(i=1;i<=n;i++){
+    for(j=n;j>=i;j--){
+        printf("*");
+    }
+        printf("\n");
+}
 return 0;
 
 }
