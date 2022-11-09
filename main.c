@@ -868,7 +868,7 @@ for(i=1;i<=n;i++){
  }
 
 
-
+/////////////////////////////////////////
 
  int i, j, n, k;
  printf(" n= ");
@@ -950,7 +950,6 @@ for (i=2;i<=n;i++){
 
 
 
-*/
 
 
 // SWITCH
@@ -985,6 +984,98 @@ case 4:
  printf("\n Greska");
  break;
  }
+
+// ZADATAK 7.20
+
+ char x;
+ printf ("Unesite jedno slovo:");
+ scanf("%c",&x);
+
+ switch (x){
+ case 'a':
+ case 'e':
+ case 'i':
+ case 'o':
+ case 'u':
+ case 'A':
+ case 'E':
+ case 'I':
+ case 'O':
+ case 'U':
+     printf(" %c je Samoglasnik",x);
+     break;
+ default:
+    printf(" %c je Suglasnik",x);
+ }
+
+
+ // ZADATAK 7.22
+
+
+char operacija;
+float op1,op2;
+float rezultat;
+
+printf("Unesite operand operacija operand:");
+scanf("%f %c %f",&op1,&operacija,&op2);
+
+switch (operacija) {
+case '+':
+    rezultat= op1 + op2;
+    break;
+case '-':
+    rezultat= op1 - op2;
+    break;
+case '*':
+    rezultat= op1 * op2;
+    break;
+case '/':
+    rezultat= op1 / op2;
+    break;
+default:
+    printf("Greska");
+    return 1;
+}
+
+printf("\nRezultat:%f",rezultat);
+
+
+// ZADATAK 7.24
+
+
+int g,m;
+
+printf("Godinu i mesec:");
+scanf ("%d %d",&g,&m);
+
+switch (m){
+case 1:
+case 3:
+case 5:
+case 7:
+case 8:
+case 10:
+case 12:
+     printf("Uneti mesec ima 31 dan");
+     break;
+case 4:
+case 6:
+case 9:
+case 11:
+    printf("Uneti mesec ima 30 dan");
+     break;
+case 2: if ((g%4==0 && g%100 !=0)|| g%400 ==0 ){
+printf("Uneti mesec ima 29 dana");
+}else {
+printf("Uneti mesec ima 28 dana");
+break;
+}
+default:printf("Greska");
+
+
+}
+
+*/
  return 0;
 
 }
