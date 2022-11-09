@@ -853,7 +853,6 @@ for(i=1;i<=n;i++){
 }
 
 
-*/
 
  int i, j, n, k;
  printf(" n= ");
@@ -867,7 +866,125 @@ for(i=1;i<=n;i++){
  printf("* ");
  printf("\n");
  }
- getche();
+
+
+
+
+ int i, j, n, k;
+ printf(" n= ");
+ scanf("%d", &n);
+ printf("\n");
+ for(i=1; i<=n; i++)
+ {
+ for(k=n; k>i; k--)
+ printf("* ");
+ printf("%d",k);
+ for(j=1; j<=i; j++)
+ printf("* ");
+ printf("\n");
+ }
+
+
+
+// SKOKOVI ZADACI
+
+
+// ZADATAK 7.4
+
+
+
+int i,semafor=0;
+
+for(i=7;i<=400;i++){
+    if (i % 3 == 0 && i % 4== 0 && i % 5 == 0 && i % 7 == 0) {
+        printf ("Broj koji zadovoljava uslov %d",i);
+        semafor = 1;
+        break;
+    }
+
+}
+
+if (semafor == 0 ){
+    printf("Ne postoji broj koji zadovoljava uslov ");
+}
+
+
+/////////////////////////////////////////////////////////////////////
+
+
+int n,i;
+float s;
+
+while(1){
+    printf("Unesite n=");
+    scanf("%d",&n);
+
+    if(n<=0){
+        break;
+    }
+    s=0;
+    for( i=1; i<=n; i++){
+        s+=1./(i*i);
+    }
+        printf("S = %.6f\n\n",s);
+}
+
+
+/////////////////////////////////////
+
+
+int i;
+long fakt = 1;
+long s=0;
+
+
+printf("Unesite n= ");
+scanf("%d",&n);
+for (i=2;i<=n;i++){
+    fakt *=i;
+    if(i % 2 == 1){
+    continue;
+    }
+    s +=fakt;
+}
+
+
+
+*/
+
+
+// SWITCH
+
+int x;
+ printf(" n= ");
+ scanf("%d",&x);
+ switch(x)
+ {
+case 1:
+ printf("\n ponedeljak");
+ break;
+case 2:
+ printf("\n utorak");
+ break;
+case 3:
+ printf("\n sreda");
+ break;
+case 4:
+ printf("\n cetvrtak");
+ break;
+ case 5:
+ printf("\n Petak");
+ break;
+ case 6:
+ printf("\n Subota");
+ break;
+ case 7:
+ printf("\n Nedelja");
+ break;
+ default:
+ printf("\n Greska");
+ break;
+ }
  return 0;
 
 }
