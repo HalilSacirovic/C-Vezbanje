@@ -1075,7 +1075,149 @@ default:printf("Greska");
 
 }
 
-*/
+// WHILE LOOP ZADACI
+
+
+// ZADATAK 5.1
+
+
+int i;
+i = 1;
+
+while (i<=5 ){
+    printf("Pozdrav Svima\n");
+    i++;
+}
+
+
+// ZADATAK 5.2
+
+int i;
+i=1;
+
+while( i<=10){
+    printf("%d ",i);
+    i++;
+}
+
+
+int i;
+i=1;
+
+while( i<=10){
+    if (i % 2 == 0) {
+        printf("%d",i);
+    }
+i++;
+}
+
+
+
+int i;
+i=1;
+
+while( i<=10){
+    if (i % 2 == 0) {
+        printf("%d",i);
+    }
+i++;
+}
+
+
+ int i;
+i=10;
+
+while( i>=1){
+    printf("%d ",i);
+    i--;
+}
+
+// ZADATAK 5.3
+
+int i,n,s=0;
+
+i=1;
+
+printf("Unesite n=");
+scanf("%d",&n);
+
+while (i <=n){
+    s+=i;
+    i++;
+}
+    printf("Suma prirodnih brojeva od 1 do %d je:%d",n,s);
+
+// ZADATAK 5.4
+
+
+int i,n,s=0;
+
+i=1;
+
+printf("Unesite n=");
+scanf("%d",&n);
+
+while (i <=n){
+    s+=i;
+    i+=3;
+}
+    printf("Suma prirodnih brojeva od 1 do %d je:%d",n,s);
+
+
+// ZADATAK 5.5
+
+ int i,n;
+float s=0;
+i=1;
+
+printf("Unesite n=");
+scanf("%d",&n);
+
+while (i <=n){
+   s=s+(1./pow(2*i+1,2));
+   i++;
+}
+    printf("s=%f",s);
+
+
+
+ // ZADATAK 5.7
+
+ int n,fn,fp,fpp,i;
+ i=3;
+ fpp=1;
+ fp=1;
+ printf("n=");
+ scanf("%d",&n);
+
+ printf("\n f1=1 \n f2=1 \n");
+ while (i<=n){
+   fn=fp+fpp;
+   fpp=fp;
+   fp=fn;
+   printf(" f%d = %d\n",i,fn);
+   i++;
+ }
+ */
+
+ // ZADATAK 5.8
+
+ int a,n,stepen=1,i=1;
+
+ printf("Unesite a=");
+ scanf("%d",&a);
+
+
+ printf("Unesite n=");
+ scanf("%d",&n);
+
+while (i<=n) {
+    stepen = stepen *a ;
+    i++;
+}
+    printf("Broj %d na %d-ti stepen je: %d",a,n,stepen);
+
+
  return 0;
 
 }
