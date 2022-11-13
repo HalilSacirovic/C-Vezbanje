@@ -268,7 +268,30 @@ for(i=1;i<n;i++){
  }
  }
 
- */
+
+ // ZADATAK 5.13
+
+ int i=1,n,znak=1;
+ float suma=0;
+
+ printf("Unesite n =");
+ scanf("%d",&n);
+
+ while(i<=n){
+    suma+=(float)znak/i;
+    i++;
+    znak=-znak;
+ }
+
+ printf("\n S= %.3f \n",suma);
+ */
+
+ // ZADATAK 5.14
+
+
+
+
+
  getche();
  return 0;
 }
