@@ -356,7 +356,11 @@ for(i=1;i<n;i++){
         n/=k;
     }
  }
- */
+
+
+// ZADATAK 5.21
+
+
 
 int a,b,c,zbir;
 
@@ -375,7 +379,166 @@ for(a=1;a<=20;a++){
         }
     }
 }
+////////////////////////////////////////////////////////////////////////////////////
+
+// DO WHILE PETLJA
+
+////////////////////////////////////////////////////////////////////////////////////]
+
+// ZADATAK 6.1
+
+
+int i;
+i=1;
+
+do{
+    printf("Pozdrav svima\n");
+    i++;
+}
+
+while(i<=5);
 
+
+// ZADATAK 6.2
+
+
+int i;
+
+i=1;
+
+do{
+    printf("%d ",i);
+    i++;
+}
+while(i<=10);
+
+
+
+
+ // ZADATAK 6.3
+
+
+ int n;
+
+ do{
+    printf("n=");
+    scanf("%d",&n);
+
+ }
+
+while(n*n>=100);{
+    printf("Kvadrat broja %d  %d pripada prvoj stotini",n,n*n);
+}
+
+
+
+
+ // ZADATAK 6.4
+
+
+
+int stepen,granica;
+
+printf("Unesite granicu:");
+scanf("%d",&granica);
+stepen=1;
+do {
+    printf("%d\n",stepen);
+    stepen*=2;
+}
+while(stepen<=granica);
+
+
+ // ZADATAK 6.6
+
+ float a,i=0,s=0;
+ printf("a=");
+ scanf("%f",&a);
+
+ do{
+    i++;
+    s=s+1/i;
+    printf("%f\n",s);
+ }
+ while(s<a);
+ {
+ printf("S=%.3f",s);
+ }
+
+
+
+ // ZADATAK 6.8
+
+
+ int x,a,b,brojac=0;
+
+ do{
+
+ printf("Unesite granice opsega:");
+ scanf("%d%d",&a,&b);
+
+ }
+while(a>1 || a>b || b<=a || b<100);
+printf("\n Brojevi u opsegu od %d do %d deljivi sa 4:\n", a, b);
+for(x=a;x<=b;x++){
+    if(x% 4 ==0){
+        printf(" %d ", x);
+        brojac++;
+    }
+    if(brojac%10==0){
+        printf("\n");
+    }
+}
+
+
+
+ // ZADATAK 6.9
+
+ int suma=0,i=100,br=0;
+
+ do {
+    if(i % 64 == 0){
+        suma+=i;
+        br++;
+    }
+    i++;
+ }
+ while(i<=999);
+
+ printf("Suma=%d",suma);
+ printf("Brojeva=%d",br);
+
+ */
+
+
+ // ZADATAK 6.10
+
+
+ int m,n,k,br=0;
+ float x;
+
+ do{
+    printf ("m=");
+    scanf("%d",&m);
+
+ }
+ while (m<=0 || m>=10);
+printf ("\n Unesite cele brojeve [0 za kraj]:\n");
+scanf("%d",&k);
+ do{
+    n=log10 (k);
+    n=k/pow(10,n);
+    if(n==m){
+        br++;
+    }
+    scanf("%d",&k);
+
+ }
+ while(k!=0);
+ printf("\n %d brojeva ima prvu cifru %d ", br, m);
+
+
+
 ////////////////////////////////////////////
 // =================================================================================
 ////////////////////////////////////////
