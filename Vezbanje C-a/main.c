@@ -284,12 +284,101 @@ for(i=1;i<n;i++){
  }
 
  printf("\n S= %.3f \n",suma);
- */
 
- // ZADATAK 5.14
+ // ZADATAK 5.17
+
+ int a,b;
+
+ printf("Unesite a=");
+ scanf("%d",&a);
+
+
+ printf("Unesite b=");
+ scanf("%d",&b);
+
+ while (a !=b){
+    if(a>b){
+        a=a-b;
+    }
+    else{
+        b-=a;
+    }
+ }
+ printf("\n NZD= %d",a);
 
 
 
+
+ // ZADATAK 5.18
+
+
+ int n,k,suma=0;
+
+ printf("Unesite n=");
+ scanf("%d",&n);
+ k=n;
+ while(k>0){
+    suma=suma+k%10;
+    k/=10;
+ }
+ if(k%suma== 0){
+    printf("Broj je nivenov");
+ }
+ else{
+    printf("Broj nije nivenov");
+ }
+
+
+
+
+ int n,obrnuti=0;
+ printf("Unesite n= ");
+ scanf("%d",&n);
+
+ while(n>0){
+    obrnuti = obrnuti*10+ n%10;
+    n/=10;
+ }
+
+ printf("Obrnuti: %d\n",obrnuti);
+
+
+ // ZADATAK 5.20
+
+ int m,n,k;
+ printf("n=");
+ scanf("%d",&n);
+ m=n/2;
+
+ for(k=2;k<=m;k++){
+    while(n%k==0){
+        printf("%3d",k);
+        n/=k;
+    }
+ }
+ */
+
+int a,b,c,zbir;
+
+printf("Pitagorini brojevi su:\n");
+
+for(a=1;a<=20;a++){
+    for(b=1;b<=20;b++){
+        zbir=a*a+b*b;
+        c=1;
+        while(c*c<=zbir){
+           if(c*c== zbir){
+            printf(" a=%2d b=%2d c=%2d\n",a,b,c);
+           }
+            c++;
+
+        }
+    }
+}
+
+////////////////////////////////////////////
+// =================================================================================
+////////////////////////////////////////
 
 
  getche();
