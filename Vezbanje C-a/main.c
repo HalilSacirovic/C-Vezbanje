@@ -508,7 +508,6 @@ for(x=a;x<=b;x++){
  printf("Suma=%d",suma);
  printf("Brojeva=%d",br);
 
- */
 
 
  // ZADATAK 6.10
@@ -536,6 +535,71 @@ scanf("%d",&k);
  }
  while(k!=0);
  printf("\n %d brojeva ima prvu cifru %d ", br, m);
+
+
+int n;
+    printf("Unesite broj N:");
+    do{
+        scanf("%d",&n);
+    }
+    while(n <= 10);
+    int broj_cifara = 0;
+
+    int temp = n;
+    do {
+        temp /= 10;
+        ++broj_cifara;
+    } while (temp != 0);
+
+    int zadnja_cifra = n % 10;
+    int prva_cifra = n / (pow(10, broj_cifara-1));
+
+    int sredina = 0;
+
+    temp = n;
+
+    for(int i = 0; i < broj_cifara; i++) {
+        int temp2 = temp % 10;
+        temp /= 10;
+        if(i == 0 || i ==broj_cifara-1){
+            continue;
+        }
+        sredina += temp2 * pow(10, i-1);
+    }
+    int m = zadnja_cifra * pow(10, broj_cifara-1)  + sredina * 10 + prva_cifra;
+
+    printf("%d ",m);
+ */
+// ZADATAK AVION
+
+int sat,min,sek,q,sat1,min1,sek1,q1,q3,f;
+
+printf("U koliko sati je krenuo: ");
+scanf("%d",&sat);
+
+printf("U koliko minuta je krenuo: ");
+scanf("%d",&min);
+
+printf("U koliko sekundi je krenuo: ");
+scanf("%d",&sek);
+
+printf("Koliko sati je proveo u letu: ");
+scanf("%d",&q);
+
+printf("Koliko minuta je proveo u letu: ");
+scanf("%d",&q1);
+
+
+printf("Koliko sekundi je proveo u letu: ");
+scanf("%d",&q3);
+
+f=sat*3600+min*60+sek+q*3600+q1*60+q3;
+
+sat1=f/3600;
+min1=(f%3600)/60;
+sek1=(f/3600)%60;
+
+printf("Avion slece u: %dh:%dmin:%dsek",sat1,min1,sek1);
 
 
 
