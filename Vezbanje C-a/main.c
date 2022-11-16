@@ -537,6 +537,40 @@ scanf("%d",&k);
  printf("\n %d brojeva ima prvu cifru %d ", br, m);
 
 
+// ZADATAK AVION
+
+int sat,min,sek,q,sat1,min1,sek1,q1,q3,suma;
+
+printf("U koliko sati je krenuo: ");
+scanf("%d",&sat);
+
+printf("U koliko minuta je krenuo: ");
+scanf("%d",&min);
+
+printf("U koliko sekundi je krenuo: ");
+scanf("%d",&sek);
+
+printf("Koliko sati je proveo u letu: ");
+scanf("%d",&q);
+
+printf("Koliko minuta je proveo u letu: ");
+scanf("%d",&q1);
+
+
+printf("Koliko sekundi je proveo u letu: ");
+scanf("%d",&q3);
+
+suma=sat*3600+min*60+sek+q*3600+q1*60+q3; //suma koja treba da se izracuna i pretvori u sekunde
+
+sat1=f/3600;
+min1=(f%3600)/60;
+sek1=(f/3600)%60;
+
+printf("Avion slece u: %dh:%dmin:%dsek",sat1,min1,sek1);
+
+
+
+
 int n;
     printf("Unesite broj N:");
     do{
@@ -569,40 +603,42 @@ int n;
     int m = zadnja_cifra * pow(10, broj_cifara-1)  + sredina * 10 + prva_cifra;
 
     printf("%d ",m);
+
+
+
+
+ int n, obrnuti=0,mafija;
+ printf(" n= ");
+ scanf("%d", &n);
+ while(n > 0)
+ {
+mafija = n%10;
+printf("\n%d\n",mafija);
+ obrnuti = obrnuti*10 + n%10;
+ printf("%d\n",obrnuti);
+ n /= 10;
+ printf("%d\n",n);
+ }
+ printf("\n Obruti: %d\n", obrnuti);
+
  */
-// ZADATAK AVION
-
-int sat,min,sek,q,sat1,min1,sek1,q1,q3,f;
-
-printf("U koliko sati je krenuo: ");
-scanf("%d",&sat);
-
-printf("U koliko minuta je krenuo: ");
-scanf("%d",&min);
-
-printf("U koliko sekundi je krenuo: ");
-scanf("%d",&sek);
-
-printf("Koliko sati je proveo u letu: ");
-scanf("%d",&q);
-
-printf("Koliko minuta je proveo u letu: ");
-scanf("%d",&q1);
-
-
-printf("Koliko sekundi je proveo u letu: ");
-scanf("%d",&q3);
-
-f=sat*3600+min*60+sek+q*3600+q1*60+q3;
-
-sat1=f/3600;
-min1=(f%3600)/60;
-sek1=(f/3600)%60;
-
-printf("Avion slece u: %dh:%dmin:%dsek",sat1,min1,sek1);
 
 
 
+ int x,y,cx=2,cy=3,r=2;
+
+ printf("Unesite x koordinatu tacke \n");
+ scanf("%d",&x);
+
+ printf("Unesite y koordinatu tacke \n");
+ scanf("%d",&y);
+
+ if(pow((x-cx),2)+pow((y-cy),2)<=r*r){
+    printf("Tacka se nalazi u krugu");
+ }
+ else {
+    printf("Tacka se ne nalazi u krugu");
+ }
 ////////////////////////////////////////////
 // =================================================================================
 ////////////////////////////////////////
