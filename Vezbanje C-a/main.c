@@ -621,7 +621,6 @@ printf("\n%d\n",mafija);
  }
  printf("\n Obruti: %d\n", obrnuti);
 
- */
 
 
 
@@ -639,6 +638,124 @@ printf("\n%d\n",mafija);
  else {
     printf("Tacka se ne nalazi u krugu");
  }
+
+
+
+ int n, obrnuti=0,mafija;
+ printf(" n= ");
+ scanf("%d", &n);
+ while(n > 0)
+ {
+
+ obrnuti = obrnuti*10 + n%10;
+
+ n /= 10;
+ }
+ printf("\n Obruti: %d\n", obrnuti);
+
+
+ int n,k,suma=0;
+
+ printf("Unesite n=");
+ scanf("%d",&n);
+ k=n;
+
+ while(k>0){
+    suma+=k%10;
+    printf("%d \n",suma);
+    k/=10;
+    printf("%d\n",k);
+ }
+
+ if(suma % k == 0 ){
+    printf("Broj je nivenov");
+ }
+ else{
+    printf("Broj nije nivenov");
+ }
+
+
+
+ int n,m,k;
+
+
+ printf("n=");
+ scanf("%d",&n);
+ printf("Prosti faktori su:");
+ m=n/2;
+
+for(k=2;k<=m;k++){
+    while(n % k == 0){
+        printf("%d ",k);
+        n/=k;
+    }
+}
+
+ int n,m,i;
+
+ long s=1;
+
+ printf("n=");
+ scanf("%d",&n);
+
+ printf("m=");
+ scanf("%d",&m);
+
+ for(i=0;i<=m;i++){
+        s*=(n+i*m);
+
+ }
+
+ printf("%ld",s);
+
+
+
+ int n,m,i,znak;
+ float s=0;
+
+
+  printf("n=");
+ scanf("%d",&n);
+
+ printf("m=");
+ scanf("%d",&m);
+
+znak=1;
+
+for(i=1;i<=m;i++){
+    s+=((float)znak/(n+i*m));
+    znak=-znak;
+}
+printf("%f",s);
+
+
+ int sat,min,sek,n;
+
+ printf("n=");
+ scanf("%d",&n);
+
+ for(sat=0;sat<=23;sat++){
+    for(min=0;min<=59;min++){
+        for(sek=0;sek<=59;sek++){
+            if(n == (sat/10+sat%10+min/10+min%10+sek/10+sek%10))
+                printf(" %d : %d : %d\n",sat,min,sek);
+        }
+    }
+ }
+ */
+
+int a,b,c,d,e;
+
+printf("A=");
+scanf("%d",&a);
+
+b=a/10;
+printf("%d\n",b);
+
+d=a%10;
+
+printf("%d\n",d);
+
 ////////////////////////////////////////////
 // =================================================================================
 ////////////////////////////////////////
